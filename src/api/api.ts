@@ -1,6 +1,5 @@
 import { IDailySeriesResponse } from "../types/dailySeries";
 import { client } from "./client.ts";
-import { generateRandomRecords } from "./mock";
 
 const getDailySeries = async (
   symbol = "IBM",
@@ -12,7 +11,6 @@ const getDailySeries = async (
     },
   });
   return data;
-  // return generateRandomRecords(); // allowed only 25 api calls daily
 };
 
 
